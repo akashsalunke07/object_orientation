@@ -1,4 +1,6 @@
-package capstoneProjects;
+package capstoneProjects.fruitsbowlchallenge;
+
+import capstoneProjects.fruitsbowlchallenge.Fruit;
 
 import java.util.ArrayList;
 
@@ -13,11 +15,11 @@ public class Sagregator {
 
 
         fruits.forEach(i -> {
-            if(i.getSize().equalsIgnoreCase("red")) {
+            if(i.getColor().equalsIgnoreCase("red")) {
                 redFruits.add(i);
-            } else if (i.getSize().equalsIgnoreCase("yellow")) {
+            } else if (i.getColor().equalsIgnoreCase("yellow")) {
                 yellowFruits.add(i);
-            } else if (i.getSize().equalsIgnoreCase("green")) {
+            } else if (i.getColor().equalsIgnoreCase("green")) {
                 greenFruits.add(i);
             }
             else{
@@ -102,7 +104,7 @@ public class Sagregator {
         int i=0,j=0,k=0;
         for (Fruit fruit : fruits) {
 
-            if(fruit.getSize().equalsIgnoreCase("simple")) {
+            if(fruit.getType().equalsIgnoreCase("simple")) {
                 if (sizelimit>=i) {
                     simpleFruits.add(fruit);
                     i++;
@@ -110,7 +112,7 @@ public class Sagregator {
                     System.out.println("Frist Layer is full Can't add more Fruits " + fruit.getName());
                     canNotAdd.add(fruit);
                 }
-            } else if (fruit.getSize().equalsIgnoreCase("aggregate")) {
+            } else if (fruit.getType().equalsIgnoreCase("aggregate")) {
 
                 if ((sizelimit/2)>j) {
                     aggregateFruits.add(fruit);
@@ -119,7 +121,7 @@ public class Sagregator {
                     System.out.println("Second Layer is full Can't add more Fruits " + fruit.getName());
                     canNotAdd.add(fruit);
                 }
-            } else if (fruit.getSize().equalsIgnoreCase("composite")) {
+            } else if (fruit.getType().equalsIgnoreCase("composite")) {
 
                 if ((sizelimit/4)>k) {
                     compositeFruits.add(fruit);

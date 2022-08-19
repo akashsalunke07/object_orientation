@@ -1,9 +1,6 @@
-package capstoneProjects;
-
-import Challenges.ArrayListSortingDemo;
+package capstoneProjects.fruitsbowlchallenge;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class FruitBowl {
 

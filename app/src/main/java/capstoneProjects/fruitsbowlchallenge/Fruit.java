@@ -1,4 +1,4 @@
-package capstoneProjects;
+package capstoneProjects.fruitsbowlchallenge;
 
 public class Fruit {
         private String name;

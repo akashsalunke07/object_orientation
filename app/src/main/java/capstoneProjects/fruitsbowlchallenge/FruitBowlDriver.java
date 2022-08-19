@@ -1,7 +1,9 @@
-package capstoneProjects;
+package capstoneProjects.fruitsbowlchallenge;
+
+import capstoneProjects.fruitsbowlchallenge.Fruit;
+import capstoneProjects.fruitsbowlchallenge.FruitBowl;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class FruitBowlDriver {
 
@@ -26,6 +28,8 @@ public class FruitBowlDriver {
         fruitList.add(new Fruit("Grapes", "Purple","Simple","Small"));
         fruitList.add(new Fruit("Strawberry", "Red","Aggregate","Small"));
         fruitList.add(new Fruit("Watermelon", "Green","Simple","Large"));
+
+
 
         FruitBowl bowl = new FruitBowl();
         bowl.printBySize(fruitList);

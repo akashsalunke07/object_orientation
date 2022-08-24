@@ -12,6 +12,8 @@ public class ShoppingCart {
     public ShoppingCart(Item item) {
         this.item = item;
     }
+
+
     public void addItem(String name,int quantity){
         ArrayList<Item> tempCart = this.item.getCart();
         Boolean flag = false;
